@@ -12,7 +12,7 @@ module.exports = async function (fastify, opts) {
                 "assignedCourier": "최배달",
                 "estimatedDeleveryTime": 15
         }})
-        const result = [await db.collection('order').insert(deliveryInfo), await db.collection('order').insert(request.body)]
+        const result = await db.collection('order').insert(request.body)
     
         reply
         .code(201)
