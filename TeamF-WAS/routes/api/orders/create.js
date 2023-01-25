@@ -13,12 +13,12 @@ module.exports = async function (fastify, opts) {
                 "estimatedDeleveryTime": 15,
                 result
         }})
-        const result = await db.collection('order').insert(request.body)
+        const result = await db.collection('order').insert(deliveryInfo, request.body)
     
         reply
         .code(201)
         .header('Content-type', 'application/json')
-        .send(deliveryInfo)
+        .send(result)
 
 }
 )}
