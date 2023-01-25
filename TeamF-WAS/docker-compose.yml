@@ -12,6 +12,6 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: example
 
   was: 
-    image: teamf/was:1.1
+    image: teamf/was:2.0
     ports: 
       - "3000:3000"

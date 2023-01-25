@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:758733530144:task-definition/teamf-was-task-definition-v2:2",
+    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:758733530144:task-definition/teamf-was-task-difinition-v5:3",
     "containerDefinitions": [
         {
-            "name": "teamf-was-container-v2",
-            "image": "758733530144.dkr.ecr.ap-northeast-2.amazonaws.com/devops03-teamf:439c6720bc73e2edacedb80efb08fe3273662e95",
+            "name": "teamf-was-container",
+            "image": "758733530144.dkr.ecr.ap-northeast-2.amazonaws.com/devops03-teamf:latest",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "teamf-was-container-v2-3000-tcp",
+                    "name": "teamf-was-container-3000-tcp",
                     "containerPort": 3000,
                     "hostPort": 3000,
                     "protocol": "tcp",
@@ -22,32 +22,32 @@
             "secrets": [
                 {
                     "name": "MONGO_USERNAME",
-                    "valueFrom": "arn:aws:secretsmanager:ap-northeast-2:758733530144:secret:teamf/mongo/env-soF9nc:MONGO_USERNAME::"
+                    "valueFrom": "arn:aws:secretsmanager:ap-northeast-2:758733530144:secret:teamf-env-v2-w3Ltnl:MONGO_USERNAME::"
                 },
                 {
                     "name": "MONGO_PASSWORD",
-                    "valueFrom": "arn:aws:secretsmanager:ap-northeast-2:758733530144:secret:teamf/mongo/env-soF9nc:MONGO_PASSWORD::"
+                    "valueFrom": "arn:aws:secretsmanager:ap-northeast-2:758733530144:secret:teamf-env-v2-w3Ltnl:MONGO_PASSWORD::"
                 },
                 {
                     "name": "MONGO_HOSTNAME",
-                    "valueFrom": "arn:aws:secretsmanager:ap-northeast-2:758733530144:secret:teamf/mongo/env-soF9nc:MONGO_HOSTNAME::"
+                    "valueFrom": "arn:aws:secretsmanager:ap-northeast-2:758733530144:secret:teamf-env-v2-w3Ltnl:MONGO_HOSTNAME::"
                 }
             ],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
                     "awslogs-create-group": "true",
-                    "awslogs-group": "/ecs/teamf-was-task-definition-v2",
+                    "awslogs-group": "/ecs/teamf-was-task-difinition-v5",
                     "awslogs-region": "ap-northeast-2",
                     "awslogs-stream-prefix": "ecs"
                 }
             }
         }
     ],
-    "family": "teamf-was-task-definition-v2",
+    "family": "teamf-was-task-difinition-v5",
     "executionRoleArn": "arn:aws:iam::758733530144:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 2,
+    "revision": 3,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -93,7 +93,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-01-19T12:56:36.656Z",
+    "registeredAt": "2023-01-25T01:47:55.156Z",
     "registeredBy": "arn:aws:iam::758733530144:root",
     "tags": [
         {
