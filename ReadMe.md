@@ -1,12 +1,6 @@
 # DevOps 03기 Project2 배달앱 만들기
 ----
 
-<img src="https://img.shields.io/badge/fastify-#000000?style=for-the-badge&logo=fastify&logoColor=white">
-<img src="https://img.shields.io/badge/GitHub Actions-#2088FF?style=for-the-badge&logo=GitHub Actions&logoColor=white">
-<img src="https://img.shields.io/badge/Node.js-#339933?style=for-the-badge&logo=Node.js&logoColor=white">
-<img src="https://img.shields.io/badge/Amazon ECS-#FF9900?style=for-the-badge&logo=Amazon ECS&logoColor=white">
-<img src="https://img.shields.io/badge/Amazon ECR-#FF9900?style=for-the-badge&logo=Amazon ECR&logoColor=white">
-<img src="https://img.shields.io/badge/MongoDB-#47A248?style=for-the-badge&logo=MongoDB&logoColor=white">
 
 ----
 프론트엔드 프로젝트로부터 주문을 요청 받을 수 있도록
@@ -21,6 +15,8 @@ DB와 통신하는 Web Application Server를 구현하였습니다.
 
 
 ### 1. Frontend 구성
+![frontend drawio](https://user-images.githubusercontent.com/119152428/217022874-8a95af6d-46a9-432a-b9d0-e20fcfbb172d.png)
 
 
 ### 2. Backend 및 DB 구성 
+![WAS   MONGO drawio](https://user-images.githubusercontent.com/119152428/217022894-0dc8172f-f29c-4d2c-b62f-1884eb81fe60.png)
