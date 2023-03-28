@@ -71,7 +71,8 @@ AWS_SECRET_ACCESS_KEY=<value>
 ```
 [url]
 monogodb://<사용자 이름>:<사용자 비밀번호>@<호스트 네임>:27017/?authMechanism=DEFAULT
-source init.sql
+use baedal
+source mongodb-init.js
 ```
 <br>
 
