@@ -27,7 +27,7 @@ AWS 기반 인프라로 프론트엔드와 백엔드 서버에 대한 CI/CD 자�
 
 
 ## 🖼️ Architecture
-![Final_Project_Team D-페이지-4 drawio](https://user-images.githubusercontent.com/119152428/228308588-62b25dff-e941-4167-a289-6c94b1c8bca5.png)
+![Final_Project_Team D-페이지-4 drawio (1)](https://user-images.githubusercontent.com/119152428/229699027-e294fb55-8e4d-43ca-bf98-dda38d0ff19a.png)
 
  - Code Pipeline : 프론트엔드 서비스에 대해 CI/CD 자동화를 위해 사용했습니다.
  - Git Action : 백엔드 서비스에 대해 CI/CD 자동화를 위해 사용했습니다.
